@@ -1,0 +1,9 @@
+{
+  "name": "dogpaw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "dogpaw": "index.js"
+  },
+  "license": "X11"
+}
