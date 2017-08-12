@@ -10,7 +10,7 @@ const options = {
 	// argument and as long as the argument starts with a double dash ("--"), consume that argument and the next one as an
 	// option. The arguments ["--artist", "Z-Ro"] become {artist: "Z-Ro"}.
 	var processArgumentVectorIndex = 2;
-	const optionArgumentMatcher = /^--([\w-]+)$/;
+	const optionArgumentMatcher = /^--(\w[\w-]*)$/;
 	var matches;
 	while (process.argv.length > processArgumentVectorIndex + 1
 			&& null !== (matches = optionArgumentMatcher.exec(process.argv[processArgumentVectorIndex]))) {
